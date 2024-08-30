@@ -28,6 +28,55 @@
   color: #61dafb;
 }
 
+.date-picker {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.weekdays, .days {
+  display: contents;
+}
+
+.day {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.day.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.day.in-range {
+  background-color: #e0f7fa;
+}
+
+.weekend {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.empty-day {
+  padding: 10px;
+  background-color: transparent;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
